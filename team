@@ -62,7 +62,7 @@ const teamData = [
   { dept: "Graphics", members: [
     { name: "Harry Yang", role: "VP Graphics" },
     { name: "Sarah Gao", role: "Director, Graphics", photo: "Sarah Gao.jpg" },
-    { name: "Melissa Zhang", role: "Director, Graphics" },
+    { name: "Melissa Zhang", role: "Director, Graphics", photo: "Melissa Zhang.jpg" },
   ]},
   { dept: "Marketing", members: [
     { name: "Tanya Mai", role: "VP Communications", photo: "Tanya Mai.jpg" },
