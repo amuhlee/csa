@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — CSA Western</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <a href="index.html"><img class="nav-logo" src="logo.png" alt="CSA Western logo"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="team.html">Our Team</a></li>
+      <li><a href="alumni.html">Alumni</a></li>
+      <li><a href="sponsorships.html">Sponsorships</a></li>
+    </ul>
+    <a href="contact.html" class="btn-contact" style="background:var(--cream-light);">Contact</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <h1>Contact Us</h1>
+</header>
+
+<section>
+  <div class="wrap simple-body">
+    <p class="section-label" style="text-align:center;">Say hello</p>
+    <p>Questions about events, membership, or sponsorships? Send us a message and someone from the exec team will get back to you.</p>
+
+    <!-- CONTACT FORM: wired to Formspree (no backend needed).
+         1. Go to formspree.io, sign up free, create a form, connect it to your CSA inbox email.
+         2. Formspree gives you a unique endpoint like https://formspree.io/f/abcdwxyz
+         3. Paste that in place of YOUR_FORM_ID below. That's it — submissions land in your inbox. -->
+    <form class="contact-form" action="https://formspree.io/f/mdeorwyl" method="POST">
+      <div>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required placeholder="Your name">
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required placeholder="you@uwo.ca">
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required placeholder="How can we help?"></textarea>
+      </div>
+      <button type="submit" class="btn-primary">Send message</button>
+    </form>
+    <p class="form-note">Or reach us directly at <a href="mailto:csawestern@gmail.com" style="color:var(--primary);font-weight:600;">csawestern@gmail.com</a></p>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 CSA Western — Chinese Students Association at Western University
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>
