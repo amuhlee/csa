@@ -4,23 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Our Team — CSA Western</title>
+<link rel="icon" type="image/png" href="/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
 <nav class="nav" id="nav">
   <div class="wrap">
-    <a href="index.html"><img class="nav-logo" src="logo.png" alt="CSA Western logo"></a>
+    <a href="/"><img class="nav-logo" src="/logo.png" alt="CSA Western logo"></a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="events.html">Events</a></li>
-      <li><a href="team.html" class="active">Our Team</a></li>
-      <li><a href="alumni.html">Alumni</a></li>
-      <li><a href="sponsorships.html">Sponsorships</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/events/">Events</a></li>
+      <li><a href="/team/" class="active">Our Team</a></li>
+      <li><a href="/alumni/">Alumni</a></li>
+      <li><a href="/sponsorships/">Sponsorships</a></li>
     </ul>
-    <a href="contact.html" class="btn-contact">Contact</a>
+    <a href="/contact/" class="btn-contact">Contact</a>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
   </div>
 </nav>
@@ -42,7 +43,7 @@
   &copy; 2026 CSA Western — Chinese Students Association at Western University
 </footer>
 
-<script src="nav.js"></script>
+<script src="/nav.js"></script>
 <script>
 const teamData = [
   { dept: "Presidents", members: [
@@ -60,7 +61,7 @@ const teamData = [
     { name: "Jason Zhuang", role: "Director, Finance", photo: "Jason Zhuang.jpg" },
   ]},
   { dept: "Graphics", members: [
-    { name: "Harry Yang", role: "VP Graphics" },
+    { name: "Harry Yang", role: "VP Graphics", photo: "Harry Yang.jpg" },
     { name: "Sarah Gao", role: "Director, Graphics", photo: "Sarah Gao.jpg" },
     { name: "Melissa Zhang", role: "Director, Graphics", photo: "Melissa Zhang.jpg" },
   ]},
@@ -96,7 +97,7 @@ teamData.forEach(section => {
     const card = document.createElement("div");
     card.className = "member";
     const photoHtml = m.photo
-      ? `<img class="member-photo-img" src="team-photos/${encodeURIComponent(m.photo)}" alt="${m.name}">`
+      ? `<img class="member-photo-img" src="/team-photos/${encodeURIComponent(m.photo)}" alt="${m.name}">`
       : `<div class="member-photo" title="Add headshot for ${m.name}">
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.6"/>

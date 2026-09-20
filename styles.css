@@ -577,6 +577,17 @@ img.alumni-photo {
   font-weight: 500;
   text-align: center;
   padding: 10px;
+  min-width: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.sponsor-slot img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 @media (max-width: 700px) {
@@ -633,6 +644,146 @@ img.alumni-photo {
   font-size: 0.8rem;
   color: var(--ink-muted);
   margin-top: 10px;
+}
+
+/* ---------- Links page (Linktree-style) ---------- */
+.links-hero {
+  padding: 40px 24px 48px;
+}
+
+.links-avatar {
+  width: 92px;
+  height: 92px;
+  object-fit: contain;
+  margin: 0 auto 16px;
+}
+
+.links-hero h1 {
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+}
+
+.links-handle {
+  margin: 10px 0 0;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  opacity: 0.9;
+}
+
+.links-socials {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.links-social {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--secondary);
+  color: var(--primary-dark);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.links-social svg {
+  width: 20px;
+  height: 20px;
+}
+
+.links-social:hover {
+  background: var(--white);
+  color: var(--primary);
+}
+
+.links-body {
+  padding-top: 48px;
+}
+
+.links-stack {
+  max-width: 620px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.links-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 999px;
+  padding: 14px 18px;
+  min-height: 64px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--ink);
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.links-item-icon {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--secondary);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.links-item-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.links-item-label {
+  flex: 1;
+  text-align: center;
+  line-height: 1.3;
+  min-width: 0;
+  text-wrap: balance;
+}
+
+.links-item-arrow {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  color: var(--primary);
+  transition: color 0.15s ease;
+}
+
+.links-item:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+}
+
+.links-item:hover .links-item-icon {
+  background: var(--white);
+  color: var(--primary);
+}
+
+.links-item:hover .links-item-arrow {
+  color: var(--white);
+}
+
+@media (max-width: 520px) {
+  .links-item {
+    border-radius: var(--radius-lg);
+    padding: 14px 16px;
+  }
+
+  .links-item-label {
+    font-size: 0.88rem;
+  }
 }
 
 /* ---------- Footer ---------- */
