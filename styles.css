@@ -672,8 +672,10 @@ img.alumni-photo {
 .links-socials {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 12px;
   margin-top: 22px;
+  width: 100%;
 }
 
 .links-social {
@@ -703,6 +705,7 @@ img.alumni-photo {
 }
 
 .links-stack {
+  width: 100%;
   max-width: 620px;
   margin: 0 auto;
   display: flex;
@@ -714,6 +717,9 @@ img.alumni-photo {
   display: flex;
   align-items: center;
   gap: 14px;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
   background: var(--white);
   border: 1.5px solid var(--border);
   border-radius: 999px;
